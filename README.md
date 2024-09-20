@@ -9,9 +9,12 @@ https://youtu.be/lV3ImtRVdFM
 
 ------------
 If you like the app and have any comments, questions, etc., feel free to email me at suetus@runbox.com
+
 And if you want to support the app aswell, you can make a donation to:
 https://www.paypal.com/donate/?hosted_button_id=5B67S7V3LB5FA
-Or:
+
+Or to my BTN wallet:
+
 bc1qsc2274xkt6r42e5pss3spl3seq8wfcesvvl5ju
 
 ![](https://github.com/Suetus-projects/Images/blob/main/BitcoinDonationsLink.png)
