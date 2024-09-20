@@ -1,0 +1,16 @@
+
+.file_pane {
+    -fx-font-size: 16;
+}
+
+.file_pane:hover {
+    -fx-background-color: #E0E0E0
+}
+
+.file_pane_pressed {
+    -fx-background-color: #C9C9C9
+}
+
+.names_size_date_label {
+    -fx-font-size: 16;
+}

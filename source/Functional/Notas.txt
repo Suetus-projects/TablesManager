@@ -1,0 +1,9 @@
+
+Bugs:
+-Si para settear un color se clickea uno (poniéndolo en '?') y luego a otro, se
+tienen dos con '?' y no se sabe que ocurre después
+-Sigue habiendo problemas con Copy cell to others y cambiar de tabla
+
+Tareas:
+-Eliminar el código duplicado de ChooseColorController en los estilos
+-El pegar una tabla con la nueva función no la settea como inalterada (creo)

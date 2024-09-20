@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="main_anchorpane" prefHeight="644.0" prefWidth="1021.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainController">
+   <children>
+      <Pane fx:id="cells_pane_mother" layoutX="263.0" layoutY="39.0" prefHeight="408.0" prefWidth="459.0" style="-fx-border-color: black; -fx-border-width: 3;" />
+      <ScrollPane fx:id="tables_scroll_pane" hbarPolicy="NEVER" layoutX="14.0" layoutY="39.0" prefHeight="422.0" prefWidth="235.0" style="-fx-background: EEFFFF;" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="tables_vbox" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="219.0" />
+         </content></ScrollPane>
+      <Pane fx:id="celldata_pane" layoutX="756.0" layoutY="40.0" prefHeight="247.0" prefWidth="243.0" style="-fx-border-color: #E0E0E0; -fx-background-color: #EEFFFF;">
+         <children>
+            <VBox fx:id="cells_parts_vbox" layoutY="32.0" prefHeight="188.0" prefWidth="243.0" />
+            <Button fx:id="btn_apply" layoutX="190.0" layoutY="221.0" mnemonicParsing="false" onAction="#btnApplyAction" styleClass="def_font" text="Apply" />
+            <CheckBox fx:id="copy_cell_checkbox" layoutX="7.0" layoutY="225.0" mnemonicParsing="false" styleClass="def_font" text="Copy cell to others" />
+            <Label fx:id="cell_data_title_label" alignment="CENTER" layoutX="23.0" layoutY="-2.0" prefHeight="32.0" prefWidth="197.0" styleClass="def_font" text="Cell data">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane fx:id="existing_colores_pane_mother" layoutX="14.0" layoutY="475.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="121.0" prefWidth="708.0" style="-fx-background-color: #EEFFFF;" />
+      <Button fx:id="add_btn" layoutX="726.0" layoutY="570.0" mnemonicParsing="false" onAction="#addColorAction" styleClass="def_font" text="Add" />
+      <Pane fx:id="notes_ta_mother" layoutX="757.0" layoutY="303.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="255.0" prefWidth="243.0" style="-fx-background-color: #EEFFFF;" />
+      <MenuBar layoutY="0.0" prefHeight="27.0" prefWidth="1021.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#openFileBtnAction" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveFileBtnAction" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveAsBtnAction" text="Save As" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeTablesOrderBtnAction" text="Change Tables Order" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Table">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addTableBtnAction" text="Add table">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#renameTableBtnAction" text="Rename table">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="R" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#deleteTableBtnAction" text="Delete table">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="D" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#deleteColorsBtnAction" text="Remove color(s)" />
+                  <MenuItem mnemonicParsing="false" onAction="#copyTableToClipboard" text="Copy table to clipboard" />
+                  <MenuItem mnemonicParsing="false" onAction="#pasteTableFromClipboard" text="Paste table from clipboard" />
+                  <Menu fx:id="menu_copy_range" mnemonicParsing="false" onMenuValidation="#setRangesOnCopyRange" text="Copy range">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Export">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#exportCurrentTable" text="Export current table" />
+                  <MenuItem mnemonicParsing="false" onAction="#exportAllTables" text="Export all tables" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#btnAboutAction" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="messages_label" layoutX="780.0" layoutY="570.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="219.0" style="-fx-border-color: black;" />
+   </children>
+   <styleClass>
+      <String fx:value="main_anchor" />
+      <String fx:value="def_font" />
+   </styleClass>
+</AnchorPane>

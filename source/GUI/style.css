@@ -1,0 +1,48 @@
+
+
+
+@font-face {
+    src: url('/GUI/resources/Inter-Regular.ttf');
+}
+
+@font-face {
+    src: url('/GUI/resources/Inter-Bold.ttf');
+}
+
+@font-face {
+    src: url('/GUI/resources/Inter-SemiBold.ttf');
+}
+
+@font-face {
+    src: url('/GUI/resources/Inter-Medium.ttf');
+}
+
+.def_font {
+    -fx-font-family: 'Inter';
+}
+
+.def_font_medium {
+    -fx-font-family: 'Inter Medium';
+}
+
+.table_togglebutton {
+    -fx-font-size: 14;
+}
+
+.main_anchor {
+    -fx-background-color: #CCE5FF;
+    
+}
+
+.notes_text_area {
+    /*-text-area-background: red;*/
+    -fx-font-size: 14;
+}
+
+.notes_text_area.content {
+    /*-fx-background-color: #CCE5FF;*/
+    -fx-background-color: green;
+    /*-fx-font-size: 20;*/
+}
+
+
