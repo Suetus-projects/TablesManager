@@ -13,7 +13,7 @@ If you like the app and have any comments, questions, etc., feel free to email m
 And if you want to support the app aswell, you can make a donation to:
 https://www.paypal.com/donate/?hosted_button_id=5B67S7V3LB5FA
 
-Or to my BTN wallet:
+Or to my BTC wallet:
 
 bc1qsc2274xkt6r42e5pss3spl3seq8wfcesvvl5ju
 
