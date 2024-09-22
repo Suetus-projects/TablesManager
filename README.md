@@ -5,6 +5,7 @@ To run it properly you need to download [Zulu JDK FX](https://www.azul.com/core-
 ![](https://github.com/Suetus-projects/Images/blob/main/OpenWithZulu.png)
 
 This video shows how to use it:
+
 https://youtu.be/okm_GM2bzuI
 
 ------------
