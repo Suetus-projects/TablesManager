@@ -1,5 +1,5 @@
 # Tables Manager
-As you might think, the app is in /compile/TablesManager.jar and the code in /source
+As you might think, the app is in /compile/TablesManager.jar and the code in /source (or you can downloaded from here also: http://e.pc.cd/KCjy6alK)
 To run it properly you need to download [Zulu JDK FX](https://www.azul.com/core-post-download/?endpoint=zulu&uuid=a1b4f9db-7b55-4e1e-addc-abcb9cf4598c) then right-click TablesManager.jar followed by Open With -> Zulu JDK:
 
 ![](https://github.com/Suetus-projects/Images/blob/main/OpenWithZulu.png)
