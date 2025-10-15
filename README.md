@@ -16,6 +16,6 @@ https://www.paypal.com/donate/?hosted_button_id=5B67S7V3LB5FA
 
 Or to my BTC wallet:
 
-bc1qsc2274xkt6r42e5pss3spl3seq8wfcesvvl5ju
+bc1q7w90p8g8qkhnp8grqle7c7y375wr35ldfy4cmh
 
 ![](https://github.com/Suetus-projects/Images/blob/main/BitcoinDonationsLink.png)
